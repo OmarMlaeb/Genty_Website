@@ -52,10 +52,12 @@ const Header = () => {
                         <i className='bx bx-search'></i>
                         </div>
                         <div className="header__menu__right__item">
-                        <i className='bx bx-shopping-cart'></i>
+                            <Link to="/cart">
+                                <i className='bx bx-shopping-bag'></i>
+                            </Link>
                         </div>
                         <div className="header__menu__right__item">
-                        <i className='bx bx-user'></i>
+                            <i className='bx bx-user'></i>
                         </div>
                     </div>
                 </div>
