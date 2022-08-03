@@ -1,15 +1,20 @@
+// mixins are styles that can be re-used throughout the website
+
+// mixin for every possible property of flex
 @mixin flex($align-item, $justify-content) {
     display: flex;
     align-items: $align-item;
     justify-content: $justify-content;
 }
 
+// the mobile mixin
 @mixin mobile {
     @media only screen and (max-width: $mobile-width) {
         @content;
     }
 }
 
+// the tablet mixin
 @mixin tablet {
     @media only screen and (max-width: $tablet-width) {
         @content;
