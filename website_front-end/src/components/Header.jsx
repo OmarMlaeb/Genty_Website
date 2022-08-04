@@ -33,9 +33,12 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className="header__menu">
+                    <div className="header__menu__mobile-toggle">
+                        <i className='bx bx-menu-alt-left'></i> {/* adding menu icon */}
+                    </div>
                     <div className="header__menu__left">
-                        <div className="header__menu__mobile-toggle">
-                            <i className='bx bx-menu-alt-left'></i> {/* adding menu icon */}
+                        <div className="header__menu__left__close">
+                            <i className='bx bx-chevron-left'></i> {/* adding menu icon */}
                         </div>
                         {
                             mainNav.map((item, index) => (
